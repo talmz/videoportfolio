@@ -5,6 +5,7 @@ import { Topic } from '../../types';
 const FilterContainer = styled.div`
   margin: 2rem auto;
   text-align: center;
+  direction: rtl;
 `;
 
 const FilterTitle = styled.h3`
@@ -49,13 +50,13 @@ interface TopicFilterProps {
 const TopicFilter: React.FC<TopicFilterProps> = ({ topics, activeTopic, onTopicChange }) => {
   return (
     <FilterContainer>
-      <FilterTitle>Filter by Category</FilterTitle>
+      <FilterTitle>סינון לפי קטגוריה</FilterTitle>
       <TopicsList>
         <TopicButton
           active={activeTopic === null}
           onClick={() => onTopicChange(null)}
         >
-          All Work
+          הכל
         </TopicButton>
         {topics.map((topic) => (
           <TopicButton

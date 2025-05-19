@@ -29,7 +29,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1071794044",
       thumbnailUrl: "https://vumbnail.com/1071794044.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video2",
@@ -38,7 +38,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1071334219",
       thumbnailUrl: "https://vumbnail.com/1071334219.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video3",
@@ -47,7 +47,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1046692822",
       thumbnailUrl: "https://vumbnail.com/1046692822.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos", "narrative"]
     },
     {
       id: "video4",
@@ -56,7 +56,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1005809580",
       thumbnailUrl: "https://vumbnail.com/1005809580.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video5",
@@ -65,7 +65,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1005807963",
       thumbnailUrl: "https://vumbnail.com/1005807963.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video6",
@@ -74,7 +74,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1005806482",
       thumbnailUrl: "https://vumbnail.com/1005806482.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos", "narrative"]
     },
     {
       id: "video7",
@@ -83,7 +83,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1005803370",
       thumbnailUrl: "https://vumbnail.com/1005803370.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video8",
@@ -92,7 +92,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "1005797149",
       thumbnailUrl: "https://vumbnail.com/1005797149.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video9",
@@ -101,7 +101,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "936626376",
       thumbnailUrl: "https://vumbnail.com/936626376.jpg",
       date: "",
-      topics: []
+      topics: ["narrative", "commercials"]
     },
     {
       id: "video10",
@@ -110,7 +110,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "918907067",
       thumbnailUrl: "https://vumbnail.com/918907067.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video11",
@@ -119,7 +119,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "859428222",
       thumbnailUrl: "https://vumbnail.com/859428222.jpg",
       date: "",
-      topics: []
+      topics: ["music-videos"]
     },
     {
       id: "video12",
@@ -128,7 +128,7 @@ const portfolioData: PortfolioData = {
       vimeoId: "837929298",
       thumbnailUrl: "https://vumbnail.com/837929298.jpg",
       date: "",
-      topics: []
+      topics: ["narrative", "music-videos"]
     }
   ]
 };

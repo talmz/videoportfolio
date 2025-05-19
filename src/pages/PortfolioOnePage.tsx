@@ -433,10 +433,6 @@ const PortfolioOnePage: React.FC = () => {
 
   // Filter videos based on selected topic
   useEffect(() => {
-    // Since filter is hidden, just show all videos
-    setFilteredVideos(portfolioData.videos);
-
-    /* Uncomment when filter is restored
     if (selectedTopic) {
       setFilteredVideos(
         portfolioData.videos.filter(video => video.topics.includes(selectedTopic))
@@ -444,7 +440,6 @@ const PortfolioOnePage: React.FC = () => {
     } else {
       setFilteredVideos(portfolioData.videos);
     }
-    */
   }, [selectedTopic]);
 
   // Intersection Observer for sections
@@ -562,14 +557,11 @@ const PortfolioOnePage: React.FC = () => {
             סקירה של פרויקטי הוידאו שלי
           </SectionSubtitle>
 
-          {/*
-            Category filter temporarily hidden - uncomment to enable filtering
-            <TopicFilter
-              topics={portfolioData.topics}
-              activeTopic={selectedTopic}
-              onTopicChange={handleTopicChange}
-            />
-          */}
+          <TopicFilter
+            topics={portfolioData.topics}
+            activeTopic={selectedTopic}
+            onTopicChange={handleTopicChange}
+          />
 
           <VideoGrid
             videos={filteredVideos}
