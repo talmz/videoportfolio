@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import { Video } from '../../types';
-import VimeoEmbed from './VimeoEmbed';
+import VideoEmbed from './VideoEmbed';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Card = styled.div`
@@ -198,8 +198,8 @@ const HoverVideoCard: React.FC<HoverVideoCardProps> = ({ video, onClick }) => {
         {/* Video embedded only when hovered */}
         {isHovered && (
           <VideoOverlay key={videoKey}>
-            <VimeoEmbed
-              vimeoId={video.vimeoId}
+            <VideoEmbed
+              video={video}
               autoplay={true}
               muted={isMuted}
               ref={videoRef}

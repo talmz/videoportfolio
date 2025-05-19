@@ -694,13 +694,24 @@ const PortfolioOnePage: React.FC = () => {
           </CloseButton>
           {selectedVideo && (
             <ResponsiveVideoContainer>
-              <iframe
-                src={`https://player.vimeo.com/video/${selectedVideo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                title={selectedVideo.title}
-              ></iframe>
+              {selectedVideo.videoType === 'vimeo' && selectedVideo.vimeoId && (
+                <iframe
+                  src={`https://player.vimeo.com/video/${selectedVideo.vimeoId}?autoplay=1&title=0&byline=0&portrait=0`}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowFullScreen
+                  title={selectedVideo.title}
+                ></iframe>
+              )}
+              {selectedVideo.videoType === 'youtube' && selectedVideo.youtubeId && (
+                <iframe
+                  src={`https://www.youtube.com/embed/${selectedVideo.youtubeId}?autoplay=1&rel=0&showinfo=0&modestbranding=1`}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={selectedVideo.title}
+                ></iframe>
+              )}
             </ResponsiveVideoContainer>
           )}
           <ModalInstruction>לחצו ESC לסגירה</ModalInstruction>

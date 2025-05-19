@@ -2,7 +2,9 @@ export interface Video {
   id: string;
   title: string;
   description: string;
-  vimeoId: string;
+  vimeoId?: string;
+  youtubeId?: string;
+  videoType: 'vimeo' | 'youtube';
   thumbnailUrl: string;
   date: string;
   topics: string[];
