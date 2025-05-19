@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import portfolioData from '../data/portfolioData';
-import VimeoEmbed from '../components/video/VimeoEmbed';
+import VideoEmbed from '../components/video/VideoEmbed';
 import VideoGrid from '../components/video/VideoGrid';
 
 const VideoContainer = styled.div`
@@ -125,7 +125,7 @@ const VideoDetailPage: React.FC = () => {
     <VideoContainer>
       <BackLink to="/portfolio">Back to Portfolio</BackLink>
 
-      <VimeoEmbed vimeoId={video.vimeoId} title={video.title} />
+      <VideoEmbed video={video} />
 
       <VideoInfo>
         <VideoTitle>{video.title}</VideoTitle>
